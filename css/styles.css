@@ -81,7 +81,7 @@ form label{
 }
 
 form input[type="text"],
-form input[type="email"]{
+form input[type="E-mail"]{
 	width:180px;
 	padding:3px 10px;
 	border:1px solid #f6f6f6;
@@ -107,7 +107,7 @@ form input[type="submit"]:hover{
 }
 
 textarea{
-	width:200%;
+	width:50%;
 	height:100px;
 	border:1px solid #f6f6f6;
 	border-radius:3px;
@@ -115,7 +115,7 @@ textarea{
 	margin:8px 0;
 	/*resize: vertical | horizontal | none | both*/
 	resize:none;
-	display:block;
+	display:box;
 }
 
 footer{

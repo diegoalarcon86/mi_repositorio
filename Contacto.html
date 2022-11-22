@@ -5,25 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Idarq</title>
-<!--Instalación de Bootstrap CSS y JS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--Instalación de Bootstrap CSS-->
+    <link rel="stylesheet" href="./css/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shorcut icon" href="./assets/IMAGENES/model.jpg.png">
 </head>
 <!--Header de la pagina estatico, esta en cada pagina-->
 <body>
-    <header>
-        <img class="redimension" src="./assets/IMAGENES/LOGO IDARQ-crea tu arquitectura.png" alt="Logo">
-        <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="./Proyectos.html">Proyectos</a>
-            <a href="./Servicios.html">Servicios</a>
-            <a href="./Somos.html">Somos</a>
-            <a href="./Contacto.html">Contacto</a>
-            </nav>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./ASSETS/IMAGENES/model.jpg.png" alt="" width="30" height="24">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-around w-100">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="Proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Somos.html">Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="Contacto.html">Contacto</a>
+                  </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
     </header> 
 <!--Cuerpo principal de cada pagina cambiante-->
-    <main class="centrar">
+    <main class="container">
         <h1>Si tienes en mente un proyecto que te motive realizar, escribenos y conversamos</h1>
         <section>
             <div class="mb-3">
@@ -35,8 +56,8 @@
                 <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="E-mail">
               </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Deja tu mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Deja tu mensaje" rows="3"></textarea>
               </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -52,5 +73,7 @@
         <a href=https://www.linkedin.com/company/idarq>Linkedin</a>
         <p>©Todos los derechos reservados 2022</p>
     </footer>
+<!--Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

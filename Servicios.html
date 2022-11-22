@@ -5,44 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Idarq</title>
-<!--Instalación de Bootstrap CSS y JS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--Instalación de Bootstrap CSS-->
+    <link rel="stylesheet" href="./css/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shorcut icon" href="./assets/IMAGENES/model.jpg.png">
 </head>
 <!--Header de la pagina estatico, esta en cada pagina-->
 <body>
-    <header>
-        <img class="redimension" src="./assets/IMAGENES/LOGO IDARQ-crea tu arquitectura.png" alt="Logo">
-        <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="./Proyectos.html">Proyectos</a>
-            <a href="./Servicios.html">Servicios</a>
-            <a href="./Somos.html">Somos</a>
-            <a href="./Contacto.html">Contacto</a>
-        </nav>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./ASSETS/IMAGENES/model.jpg.png" alt="" width="30" height="24">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-around w-100">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="Proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="Servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Somos.html">Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                  </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
     </header> 
 <!--Cuerpo principal de cada pagina cambiante-->
-        <main class="centrar">
-            <img class="redimension2" src="./assets/IMAGENES/kaleidico-26MJGnCM0Wc-unsplash.jpg" alt="Servicios">
-            <p>"Nuestra forma de hacer, es por esencia colaborativa, integradora e inspiradora, nuestros clientes son parte del equipo de diseño</p>
+        <main class="container">
             <section>
-                <div>
-                    <img class="redimension3" src="./assets/IMAGENES/blueprint.png" alt="Diseño Arquitectonico">
-                    <h2>Diseño Arquitectonico</h2>
-                    <p>Entendemos el diseño como el proceso creativo que cumple con las necesidades de espacios habitables para el ser 
-                    humano tanto en lo estético como en lo tecnológico.</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./ASSETS/IMAGENES/acceso.jpg" class="card-img-top" alt="Diseño Arquitectonico">
+                        <div class="card-body">
+                        <h1>Diseño Arquitectonico</h1>
+                        <p class="card-text">Proceso creativo que cumple con las necesidades de espacios habitables para el ser 
+                        humano tanto en lo estético como en lo tecnológico.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img class="redimension3" src="./assets/IMAGENES/architect.png" alt="Arquitectura Industrial">
-                    <h2>Arquitectura Industrial</h2>
-                    <p>Diseño y construcción de naves industriales para la producción y/o almacenaje de los bienes de tu negocio.</p>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./ASSETS/IMAGENES/R25.jpg" class="card-img-top" alt="Diseño Arquitectonico">
+                        <div class="card-body">
+                        <h1>Arquitectura Industrial</h1>
+                        <p class="card-text">Diseño y construcción de naves industriales para distintas necesidades, para la producción y/o almacenaje de los bienes de tu negocio.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img class="redimension3" src="./assets/IMAGENES/legal.png" alt="Gestion Normativa">
-                    <h2>Gestión de normativas y permisos</h2>
-                    <p>Tramitación de expedientes municipales y/o otros permisos necesarios para hacer real y legal tu proyecto de arquitectura.</p>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./ASSETS/IMAGENES/07.jpg" class="card-img-top" alt="Diseño Arquitectonico">
+                        <div class="card-body">
+                        <h1>Gestión de normativas y permisos</h1>
+                        <p class="card-text">Tramitación de expedientes municipales y/o otros permisos necesarios para hacer real y legal tu proyecto de arquitectura.</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
             </section>
         </main>
 <!--Footer de la pagina estatico, esta en cada pagina-->
@@ -51,5 +84,7 @@
         <a href=https://www.linkedin.com/company/idarq>Linkedin</a>
         <p>©Todos los derechos reservados 2022</p>
     </footer>
+<!--Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

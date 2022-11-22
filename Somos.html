@@ -5,48 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Idarq</title>
-<!--Instalación de Bootstrap CSS y JS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--Instalación de Bootstrap CSS-->
+    <link rel="stylesheet" href="./css/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shorcut icon" href="./assets/IMAGENES/model.jpg.png">
 </head>
 <!--Header de la pagina estatico, esta en cada pagina-->
 <body>
-    <header>
-        <img class="redimension" src="./assets/IMAGENES/LOGO IDARQ-crea tu arquitectura.png" alt="Logo">
-        <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="./Proyectos.html">Proyectos</a>
-            <a href="./Servicios.html">Servicios</a>
-            <a href="./Somos.html">Somos</a>
-            <a href="./Contacto.html">Contacto</a>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./ASSETS/IMAGENES/model.jpg.png" alt="" width="30" height="24">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-around w-100">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="Somos.html">Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                  </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
     </header> 
 <!--Cuerpo principal de cada pagina cambiante-->
-        <main>
+        <main class="container">
             <section>
-                <div>
+                <div class="row align-items-start">
+                <div class="col-lg-4">
                     <img src="./assets/IMAGENES/idarq_arquitectos_diego_alarcon.jpg" alt="Diego">
-                    <h2>Diego Alarcón</h2>
+                    <h1>Diego Alarcón</h1>
                     <h3>Arquitecto</h3>
                     <p>Arquitecto enfocado en el área tecnológica y su aplicación en proyectos de diferentes escalas y complejidades.
                         Mi experiencia desde las metodologías CAD y BIM en el ámbito laboral, me han llevado a trabajar y a experimentar con distintos softwares
                         y técnicas que se acomoden a los estándares de entrega que buscan los clientes y uno como Arquitecto.</p>
                 </div>
-                <div>
+                <div class="col-lg-4">
                     <img src="./assets/IMAGENES/idarq_arquitectos_max_enberg.jpg" alt="Max">
-                    <h2>Maximiliano Enberg</h2>
+                    <h1>Maximiliano Enberg</h1>
                     <h3>Arquitecto</h3>
                     <p>Arquitecto profesional desde el 2013, 8 años de experiencia trabajando para el sector público lo que me ha entregado una constancia en el diseño, coordinación y construcción de proyectos a lo largo del territorio nacional.
                         Además; he estado en constante actualización de nuevas herramientas y metodologías de diseño, adaptándome a los nuevos requerimientos, procesos y desarrollo de proyectos. Metodología BIM  en modelación y  revisión.</p>
                 </div>
-                <div>
+                <div class="col-lg-4">
                     <img src="./assets/IMAGENES/idarq-arquitectura_danilo_fajardo.jpg" alt="Danilo">
-                    <h2>Danilo Fajardo</h2>
+                    <h1>Danilo Fajardo</h1>
                     <h3>Arquitecto</h3>
                     <p>Profesional Arquitecto especialista en Gestión de Proyectos de Arquitectura y Construcción con 9 años de experiencia, entregando soluciones de alta calidad a rubros de: Retail, Vivienda, Espacios Púbicos, Educación e Industriales. 
                         Siempre desde el levantamiento de requerimientos y necesidades, gestionando el relacionamiento con clientes e involucrados, diseño, planificación conceptual, básica y detalle, hasta la coordinación, gestión de su desarrollo y el cierre de proyecto.</p>
                 </div>
-            </section>
+                </div>
+                </div>
+                </section>
 
         </main>
 <!--Footer de la pagina estatico, esta en cada pagina-->
@@ -55,5 +80,7 @@
         <a href=https://www.linkedin.com/company/idarq>Linkedin</a>
         <p>©Todos los derechos reservados 2022</p>
     </footer>
+<!--Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
